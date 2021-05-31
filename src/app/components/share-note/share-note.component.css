@@ -1,0 +1,20 @@
+.center-align{
+    text-align: center;
+}
+
+#shareNoteWithMoreUsers,usersAssociatedWithThisNote{
+    font-weight: bolder;
+    margin: 10px;
+}
+
+hr{
+    margin: 15px;
+    color: #C8C8C8;
+}
+
+#usersAssociatedWithNoteList{
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}

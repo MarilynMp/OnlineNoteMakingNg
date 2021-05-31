@@ -1,0 +1,11 @@
+<div class="existingNoteCard">
+    <div class="container">
+        <textarea id="noteMessage" [disabled]="!canNoteBeUpdated"
+            #noteMessageReference>{{ noteForUser.noteMessage }}</textarea>
+        <p id="userRole">User Role Type : {{ userRoleType }}</p>
+        <button class="btn btn-warning" [disabled]="!canNoteBeUpdated" (click)="onUpdateNote()">Update</button>
+        <button class="btn btn-danger" [disabled]="!canNoteBeDeleted" (click)="onDeleteNote()">Delete</button>
+        <button class=" btn btn-primary" [disabled]="!canNoteBeShared" (click)= "onShareNote()" >Share</button>
+        <mat-spinner *ngIf="isLoading" id="spinner" diameter="30"></mat-spinner>
+    </div>
+</div>

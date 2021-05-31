@@ -1,0 +1,24 @@
+<div class="outerContainer">
+    <div class="shareNoteWithMoreUsers">
+        <div class="container">
+            <label for="users">Select user to share with:</label>
+            <select  
+                class="form-control col-lg-8" 
+                name="users" id="usersDropdown" 
+                [(ngModel)] = "selectedUserName">
+                <option *ngFor = "let user of allUsers" [value]="user.userName">
+                    {{user.userName}}</option>
+            </select>
+            <label id="userRoleTypeDropdown">Select user role:</label>
+            <select 
+                class="form-control col-lg-8" 
+                name="userRoles" 
+                id="userRoleDropdown"
+                [(ngModel)] = "selectedUserRoleTypeName">
+                <option *ngFor = "let userRole of userRoles" [value]="userRole.userRoleTypeName">
+                    {{userRole.userRoleTypeName}}</option>
+            </select>
+            <button class="btn btn-primary" id="shareNote" (click)= "onNoteShare()" [disabled]="isLoading">Share</button>
+        </div>
+    </div>
+</div>

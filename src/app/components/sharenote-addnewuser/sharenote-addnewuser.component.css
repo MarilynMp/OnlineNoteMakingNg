@@ -1,0 +1,26 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin: 10px;
+}
+
+.shareNoteWithMoreUsers {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    background-color: #f1f1f1;
+    margin: 15px;
+    width: fit-content;
+}
+
+#usersDropdown,#userRoleDropdown{
+    margin: 10px;
+}
+
+#shareNote{
+    margin: 10px;
+}
+

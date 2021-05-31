@@ -1,0 +1,33 @@
+
+#box{
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: inline-block;
+    min-height: 40%; 
+    border:2px solid black;
+    padding: 5%;
+    text-align: center;
+    margin: 50px;
+}
+
+tr{
+    line-height:10px;
+}
+
+button{
+    margin: 10px;
+}
+
+#errorMessage{
+    margin: 10px;
+    color: red;
+    font-weight: bold ;
+}
+
+#spinner{
+    margin:0 auto;
+    margin-bottom: 10px ;
+}

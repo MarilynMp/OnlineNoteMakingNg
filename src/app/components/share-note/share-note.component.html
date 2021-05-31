@@ -1,0 +1,19 @@
+<app-header></app-header>
+<h3 id="usersAssociatedWithThisNote" class="center-align">You shared this note to</h3>
+
+<p *ngIf="usersForNote.length == 0" class="center-align">------No Users--------</p>
+
+<div id = "usersAssociatedWithNoteList">
+    <app-existing-sharednotes-details 
+        *ngFor="let user of usersForNote; 
+        trackBy" 
+        [currentUser]="user"
+        (deleteNoteEvent) = "onDeleteNote()">
+    </app-existing-sharednotes-details>
+</div>
+
+<hr>
+
+<h3 id="shareNoteWithMoreUsers">Share this note to more users</h3>
+<app-sharenote-addnewuser
+    (shareNoteEvent) = "onShareNote()"></app-sharenote-addnewuser>

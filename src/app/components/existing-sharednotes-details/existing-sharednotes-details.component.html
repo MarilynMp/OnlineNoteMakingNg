@@ -1,0 +1,9 @@
+<div class="existingSharedNoteCard">
+    <div class="container">
+        <p id="userName">User : {{ currentUser.userName }}</p>
+        <p id="userRoleType">Role Type : {{ currentUser.userRoleName }}</p>
+        <button 
+            class="btn btn-danger"
+            (click)= "onStopSharing()">Stop Sharing Note</button>
+    </div>
+</div>

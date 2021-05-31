@@ -1,0 +1,15 @@
+.container{
+    display: inline-block;
+}
+
+button{
+    margin-bottom: 10px;
+}
+
+.existingSharedNoteCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    background-color: #f1f1f1;
+    margin: 15px;
+    width: fit-content;
+}

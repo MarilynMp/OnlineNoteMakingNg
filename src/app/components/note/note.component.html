@@ -1,0 +1,9 @@
+<app-header></app-header>
+<app-add-note
+ [currentUser] = "currentUser"
+ (noteAdded) = onNoteAdded()></app-add-note>
+ <h1>Existing Notes associated to you</h1>
+ <app-existing-notes
+    *ngFor = "let note of notesForCurrentUser; trackby"
+    [noteForUser] = note
+    (noteDeleted) = onNoteDeleted()></app-existing-notes>

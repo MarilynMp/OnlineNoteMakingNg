@@ -1,0 +1,14 @@
+<div class="container">
+    <textarea 
+        id="noteMessage" 
+        rows="10"
+        placeholder="Add Note Message here ..."
+        #noteMessageReference></textarea>
+    <mat-spinner *ngIf="isLoading" id="spinner" diameter="30"></mat-spinner>
+    <button 
+        class="btn btn-success"
+        (click) = "onAddNote()"
+        [disabled] = "addNoteButtonDisable">Add Note</button>
+</div>
+
+<hr>

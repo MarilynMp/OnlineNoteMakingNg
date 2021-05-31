@@ -1,0 +1,38 @@
+<div id = "box">
+    <div id="container">
+        <h3>Login</h3>
+
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <label for="userName">
+                            User Name
+                        </label>
+                    </td>
+                    <td>
+                        <input id="userName" type="text" #userNameElementRef>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">
+                            Password
+                        </label>
+                    </td>
+                    <td>
+                        <input id="password" type="password" #userPasswordElementRef required>
+                    </td>
+                </tr>
+            </table>
+
+            <mat-spinner *ngIf="isLoading" id="spinner" diameter="30"></mat-spinner>
+        </div>
+
+
+        <p *ngIf="showErrorMessage" id="errorMessage">{{ errorMessage }}</p>
+
+        <button class="btn btn-primary " (click)=onClickLogin()>Login</button>
+        <button class="btn btn-success" (click)=onClickRegister()>Register</button>
+    </div>
+</div>

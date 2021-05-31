@@ -1,0 +1,15 @@
+a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+a:hover{
+    background-color:#5d5d5d;
+}
+
+.navbar{
+    margin-bottom: 10px;
+}
